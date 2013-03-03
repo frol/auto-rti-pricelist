@@ -56,7 +56,7 @@ def main():
     tmp_pricelist_html.write('</tr></thead><tbody>')
     
     csv_file = open('price.csv', 'r')
-    csv_data = csv.DictReader(csv_file) 
+    csv_data = csv.DictReader(csv_file, delimiter=';')
     for csv_line in csv_data:
         html_line = '<tr class="priceline ' + markers(csv_line) + '">'
         for field in visible_fields:
