@@ -1,0 +1,25 @@
+# Ignore all temproray, log and avatar files
+*.pyc
+local_settings.py
+*.swp
+*~
+core4*
+nbproject/
+*.mo
+.svn
+.git
+*.log
+media/*
+static/*_release/
+deploy/var/log/*
+deploy/uwsgi.pid
+build/
+escalibro.db
+deploy/local_*
+deploy/lock/*
+Thumbs.db
+reports/
+deploy/uwsgi.ini
+deploy/var/*
+price.csv
+pricelist.html
