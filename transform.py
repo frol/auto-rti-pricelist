@@ -24,7 +24,7 @@ fields = {
 fields_title = {
     'catalog_number': 'Каталожный номер',
     'name': 'Наименование',
-    'price': 'Цена, грн',
+    'price': 'Цена (опт)',
     'manufacturer': 'Производитель',
 }
 
@@ -57,6 +57,7 @@ def main():
     
     csv_file = open('price.csv', 'r')
     csv_data = csv.DictReader(csv_file, delimiter=';')
+    csv_data.fieldnames = [name.strip() for name in csv_data.fieldnames]
     for csv_line in csv_data:
         html_line = '<tr class="priceline ' + markers(csv_line) + '">'
         for field in visible_fields:
