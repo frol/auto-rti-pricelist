@@ -114,3 +114,10 @@ div.t_fixed_header.ui div.ui-resize-ghost {
 	width 			: 2px; 
 	border			: none;
 }
+
+/* BOOTSTRAP TUNING */
+
+.table th, .table td {
+    padding: 8px 4px;
+    overflow: hidden;
+}
