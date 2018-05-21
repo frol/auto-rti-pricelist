@@ -23,3 +23,5 @@ deploy/uwsgi.ini
 deploy/var/*
 price.csv
 pricelist.html
+.vscode
+photos/
