@@ -49,7 +49,7 @@ def main():
         pricelist_html_file.write('<meta charset="utf-8" />\n')
         pricelist_html_file.write('<link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">\n')
         pricelist_html_file.write('<link href="static/css/base.css" rel="stylesheet" type="text/css">\n')
-        pricelist_html_file.write('<script src="static/js/jquery-3.3.1.min.js"></script>\
+        pricelist_html_file.write('<script src="static/js/jquery-1.8.1.min.js"></script>\
         <script type="text/javascript" src="static/js/jquery.fixheadertable.min.js"></script>\
         <script src="static/js/filters.js"></script>\n')
         pricelist_html_file.write('<script src="static/fancybox-master/dist/jquery.fancybox.min.js"></script>\n')
