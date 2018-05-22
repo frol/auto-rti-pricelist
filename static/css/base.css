@@ -121,3 +121,19 @@ div.t_fixed_header.ui div.ui-resize-ghost {
     padding: 8px 4px;
     overflow: hidden;
 }
+
+.table .title_photo, .table .value_photo {
+    width: 35px;
+}
+
+.table .title_price, .table .value_price {
+	width: 70px;
+}
+
+.table .title_manufacturer, .table .value_manufacturer {
+	width: 18%;
+}
+
+.table .title_catalog_number, .table .value_catalog_number {
+	width: 13%;
+}
