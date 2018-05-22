@@ -55,6 +55,7 @@ def main():
         pricelist_html_file.write('<script src="static/fancybox-master/dist/jquery.fancybox.min.js"></script>\n')
         pricelist_html_file.write('<link rel="stylesheet" href="static/fancybox-master/dist/jquery.fancybox.min.css" />\n')
         pricelist_html_file.write('<script>$(document).ready(function() { $(".value_photo a").fancybox(); });</script>\n')
+        pricelist_html_file.write('<script>$(document).ready(function() { $(".value_name a").fancybox(); });</script>\n')
 
         with open('~pricelist.html', 'w', encoding='utf-8') as tmp_pricelist_html_file:
             tmp_pricelist_html_file.write('<div class="table table-striped"><table id="price_table"><thead><tr>')
@@ -72,6 +73,12 @@ def main():
                             tmp_pricelist_html_file.write(
                                 '<td class="value_photo"><a href="photos/%s.jpg" target="_blank"><img src="photos/%s.jpg" style="height: 20px;" /></a></td>' % (
                                     csv_line["Код"], csv_line["Категория"]
+                                )
+                            )
+                        elif field == 'name':
+                            tmp_pricelist_html_file.write(
+                                '<td class="value_name"><a href="photos/%s.jpg" target="_blank">%s</a></td>' % (
+                                    csv_line["Код"], csv_line["Наименование"]
                                 )
                             )
                         else:
